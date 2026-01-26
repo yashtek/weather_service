@@ -1,0 +1,33 @@
+{
+  "name": "weather_service",
+  "version": "1.0.0",
+  "description": "weather_procject",
+  "homepage": "https://github.com/yashtek/weather_service#readme",
+  "bugs": {
+    "url": "https://github.com/yashtek/weather_service/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yashtek/weather_service.git"
+  },
+  "license": "ISC",
+  "author": "Yash_Sharma",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js",
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "axios": "^1.13.3",
+    "bcrypt": "^6.0.0",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "express-validator": "^7.3.1",
+    "ioredis": "^5.9.2",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.1.5",
+    "redis": "^5.10.0"
+  }
+}
