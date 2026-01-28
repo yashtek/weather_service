@@ -5,6 +5,6 @@ const router = express.Router();
 const weatherController = require('../controllers/weatherController');
 const {authenticate,weatherValidator} = require('../middleware/index');
 
-router.get('/current',authenticate,weatherValidator,weatherController.getWeatherByCity);
+router.get('/current',weatherValidator,weatherController.getWeatherByCity);
 
 module.exports =router;

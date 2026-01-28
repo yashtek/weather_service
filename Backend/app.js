@@ -1,10 +1,13 @@
 const express = require('express');
+const cors = require('cors');
 const app = express();
 
 require('dotenv').config();
 require('./db')();
 const authRoutes = require('./routes/auth.routes');
 const weatherRoutes = require('./routes/weather.routes');
+
+app.use(cors());
 app.use(express.json());
 app.use('/api/auth',authRoutes);
 app.use('/api/weather',weatherRoutes);
